@@ -1,0 +1,38 @@
+Commandes importantes : 
+=======================
+// Pour relancer une migration
+php artisan migrate:refresh --path=database/migrations/NOM_DE_LA_MIGRATION
+
+PROBLEME DE LIENS !!!
+!!!!
+FAIRE LES CHANGEMENTS AVANT D'EFFECTUER NPM RUN BUILD
+!!!!!
+=================
+
+CampsFavoris.jsx
+----------------
+ligne 77 - 78
+
+Terrain.jsx
+-----------
+ligne 242 - 243
+
+Terrains.jsx
+------------
+ligne 111 -112
+ligne 135 - 136
+
+GestionAnnonces.jsx
+-------------------
+ligne 45 - 46
+ligne 75 - 76
+
+Annonce.jsx
+-----------
+ligne 1002 - 1003
+ligne 1041 - 1042
+ligne 1081 - 1082
+
+Profile.jsx
+-----------
+ligne 257 - 263

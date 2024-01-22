@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: black;
+    background-color: grey;
+}
+
+.btn.btn-profile:focus {
+    border:none;
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn-profile:focus {
+    border:none;
+    outline: none !important;
+    box-shadow: none;
+}
+
+.btn.btn-profile:first-child:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-profile:first-child:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-profile:focus:not(:focus-visible) {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn.show {
+    border: none;
+}
+
+.btn.show:hover {
+    border: none;
+}
+
+.btn.show:focus {
+    border: none;
+    outline: none !important;
+}
+
+.btn.show:active {
+    border: none;
+    outline: none !important;
+}
+
+.input-wrapper {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    height: 2.5rem;
+    padding: 0 15px;
+    box-shadow: 0px 0px 8px #ddd;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 1.25rem;
+    width: 100%;
+    margin-left: 5px;
+}
+
+input.sansOutline.form-control:focus{
+    outline: none;
+    border-color: #25632d;
+}
+
+input.sansOutline:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+#search-icon, #date-icon, #filter-icon, #iconHome, #iconEnvelope, #iconPhone, #iconFax, #iconFacebook, #iconInstagram, #iconLinkedIn, #iconProfile, #iconHamburger {
+    color: #25632d;
+}
+
+#iconFacebook, #iconProfile {
+    font-size: 30px;
+}
+
+#iconHamburger {
+    padding-right: 10px;
+}
+
+#iconInstagram, #iconLinkedIn, #iconHamburger {
+    font-size: 35px;
+}
+
+#tenteAnnonce, #vanAnnonce, #caravanneAnnonce, #camperAnnonce {
+    font-size: 50px;
+}
+
+#tenteAnnonce svg, #vanAnnonce svg, #caravanneAnnonce svg, #camperAnnonce svg {
+    color: #25632d;
+    /* color: white; */
+    /* border: 1px solid #25632d; */
+}
+
+#tenteCard, #vanCard, #camperCard {
+    color: #25632d !important;
+    font-size: 35px !important;
+    margin-right: 10px !important;
+}
+
+#caravanneCard {
+    color: #25632d !important;
+    font-size: 30px !important;
+    margin-right: 10px !important;
+}
+
+.slick-list {
+    padding-top: 10px !important;
+}
+
+/* .btn-check:checked ~ #tenteAnnonce svg {
+    color: white !important;
+    background-color: #25632d !important;
+}
+
+.btn-check:checked ~ #vanAnnonce svg {
+    color: white !important;
+    background-color: #25632d !important;
+}
+
+.btn-check:checked ~ #caravanneAnnonce svg {
+    color: white !important;
+    background-color: #25632d !important;
+} */
+
+.btn-check:checked + .btn-outline-primary {
+    color: white!important;
+    background-color: #25632d!important;
+}
+
+
+.btn-outline-primary {
+    --bs-btn-border-color: #25632d !important;
+    --bs-btn-color: #25632d !important;
+    --bs-btn-active-border-color: #25632d !important;
+}
+
+.cursorPointer:hover {
+    cursor: pointer;
+}
+
+#dropdown-basic::after {
+    content: none;
+}
+
+@media screen and (max-width: 600px) {
+    #changerPourFullWidth {
+      width: 100% !important;
+    }
+}
+
+.customLink > li > button {
+    background-color: #25632d !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .customLink li {
+      width: 100%;
+    }
+}
+
+.list-group > li {
+    border-color: #25632d;
+}
+
+/* @media screen and (max-width: 600px) {
+    .tab-wrapper > ul > li {
+        display: block !important;
+        flex: none !important;
+        width: 100% !important;
+        margin-top: 1px !important;
+        margin-bottom: 1px !important;
+    }
+} */
+
+.map-container {
+    width: 100%;
+    height: 100vh;
+}
+
+/*
+STYLE POUR LE CALENDRIER ET LE DATE-RANGE-PICKER
+================================================
+*/
+.myCalendar {
+    width: 100% !important;
+    /* margin: auto; */
+}
+
+.rdrCalendarWrapper.rdrDateRangeWrapper {
+    width: 100% !important;
+}
+
+.rdrMonth {
+    width: 100% !important;
+}
+
+.rdrDefinedRangesWrapper {
+    display: none !important;
+}
+
+/*
+STYLE POUR LES LIENS EQUIPEMENTS DISPONIBLES
+============================================
+*/
+.sansBordureTop {
+    border-top: none !important;
+}
+
+.sansBorderLeftAndRight {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.firstItem {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.lastItem {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* .list-group .list-group-item:first-child {
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+}
+
+.list-group-item:last-child {
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+} */
+
+/*
+STYLE POUR LES PHOTOS (INPUT TYPE FILE)
+=======================================
+*/
+.img_principale, .img_cadre, .img_autre {
+    width: 30% !important;
+}
+
+@media (max-width: 1200px) {
+    .img_principale, .img_cadre, .img_autre {
+      width: 50% !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .img_principale, .img_cadre, .img_autre {
+        width: 100% !important;
+    }
+    .map-container {
+        height: 500px !important;
+    }
+}
+
+/*
+STYLE POUR LES DATES RANGES CALENDRIER
+======================================
+*/
+
+.rdrSelected {
+    background: #25632d !important;
+}
+.rdrStartEdge {
+    background: #25632d !important;
+}
+.rdrEndEdge {
+    background: #25632d !important;
+}
+.rdrDateDisplayItemActive {
+    border-color: #25632d !important;
+}
+.rdrInRange {
+    background: #25632d !important;
+}
+
+.slick-prev::before, .slick-next::before {
+    line-height: 1.15 !important;
+}
+
+.slick-prev, .slick-next {
+    border-radius: 50% !important;
+}
+
+.card {
+    outline: none !important;
+}
+
+.card > a {
+    outline: none !important;
+}
+
+button.customFocus:focus {
+    outline: #25632d !important;
+    background-color: #25632d;
+    color: white;
+}
+
+button.customFocus:focus > svg {
+    color: white !important;
+}
+
+button.customFocus:hover {
+    background-color: #25632d;
+    color: white;
+}
+
+button.customFocus:hover > svg {
+    color: white !important;
+}
+
+
+
+.react-calendar__tile:disabled {
+    /* background: red !important; */
+    background: lightgrey !important;
+    color: white;
+}
+
+.react-calendar__navigation__label {
+    pointer-events: none !important;
+}
+
+.rdt_TableBody .rdt_TableRow{
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.react-calendar__tile--now {
+    background-color: inherit !important;
+    color: black !important;
+}
+
+.react-calendar__tile--active {
+    background: red !important;
+}
+
+.react-calendar__tile--now.react-calendar__tile--active,
+.react-calendar__tile--now.react-calendar__tile--selected {
+    /* background-color: #006edc !important; */
+    background-color: red !important;
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+    .imgMobile {
+        height: 450px!important;
+    }
+    .cardMobile {
+        width: 100% !important;
+        box-shadow: none !important;
+    }
+    #imageMobile {
+        padding: 0!important;
+    }
+    .marginAenlever {
+        margin-top: 0 !important;
+    }
+}
+
+.poppins {
+    font-family: 'Poppins';
+}
+
+.slick-dots {
+    bottom: -50px !important;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+}
+  
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .bordered-div {
+        border-right: none !important;
+    }
+    .margin-div {
+        margin-top: 30px !important;
+    }
+}
+
+
+
+/* Code pour le slider nbr visiteurs */
+.single-thumb .range-slider__thumb[data-lower] {
+    width: 0;
+}
+.single-thumb .range-slider__range {
+    border-radius: 6px;
+}
+/* Couleur des sliders dans Terrain.jsx */
+.range-slider__range {
+    background-color: #25632d!important;
+}
+.range-slider__thumb[data-upper="true"] {
+    background-color: #25632d!important;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-item-mobile {
+        flex-basis: 48%;
+    }
+    .grid-container {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
